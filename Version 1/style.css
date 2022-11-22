@@ -1,0 +1,26 @@
+*{
+    margin: 0%;
+    font-weight: 450;
+}
+
+table{
+    width: 50%;
+    border:2px solid rgb(40, 118, 215);
+    margin: 5% 25%;
+    background-color: rgb(142, 197, 248);
+    border-radius: 3% 3%;
+    height: 75vh;
+}
+select{
+    width: 45%;
+}
+input{
+    border: none;
+}
+
+select{
+    border:none;
+}
+.confirmation{
+    margin: 5% 20%;
+}

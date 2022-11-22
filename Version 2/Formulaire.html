@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./Javascript.js"></script>
+    <title>Formulaire</title>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td><label for="nom">Nom: </label></td>
+                <td><input type="text" id="nom" onkeyup="validenom()"></td>
+                <td><span id="Vnom"></span></td>
+            </tr>
+            <tr>
+                <td><label for="prenom">Prénom: </label></td> 
+                <td><input type="text" id="prenom" onkeyup="valideprenom()"></td> 
+                <td><span id="Vprenom"></span></td>
+            </tr>
+            <tr>
+                <td> <label for="email">Email: </label></td>   
+                <td><input type="text" id="email" onkeyup="validemail()"></td> 
+                <td><span id="Vemail"></span></td>   
+            </tr>
+            <tr>
+                <td> <label for="tel">Télephone: </label></td>   
+                <td><input type="text" id="tel" onkeyup="validetel()"></td> 
+                <td><span id="Vtel"></span></td>   
+            </tr>
+            <tr>
+            <td><label for="genre">Genre: </label></td>
+            <td><input type="radio" name="genre" id="feminin" onchange="validegenre()">Féminin
+            <input type="radio" name="genre" id="masculin" onchange="validegenre()">Masculin</td> 
+            <td><span id="Vgenre"></span></td>
+            </tr>
+            <tr>
+            <td><label for="groupe">Groupe: </label></td>
+            <td><input type="radio" name="groupe" id="g1" onchange="validegroupe()">DW101
+            <input type="radio" name="groupe" id="g2" onchange="validegroupe()">DW102
+            <input type="radio" name="groupe" id="g3" onchange="validegroupe()">DW103</td>
+            <tr><td></td>
+            <td>
+            <input type="radio" name="groupe" id="g4" onchange="validegroupe()">DM101
+            <input type="radio" name="groupe" id="g5" onchange="validegroupe()">DM102</td>
+            <td><span id="Vgroupe"></span></td></tr>
+            </tr>
+            <tr><td><label for="club">Clubs: </label></td>
+            <td><select id="club" onchange="valideclub()" multiple>
+                <option>Informatique</option>
+                <option>Robotique</option>
+                <option> Jeu d'échecs</option>
+                <option>Musique</option>
+                <option>Foot</option>
+                <option>Théatre</option></select> </td>
+            <td><span id="Vclub"></span></td></tr>
+            <tr>
+                <td></td>
+                <td><button id="valider">Valider</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
